@@ -49,7 +49,7 @@ pipeline {
             }
         } 
 
-Parallel {
+parallel {
 
      stage('stage 4') {
          steps {
