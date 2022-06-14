@@ -45,7 +45,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 sh 'docker run -d -it --name=testing01 newtestapp /bin/sh'
+                 sh 'docker run -d -it --name=testing02 newtestapp /bin/sh'
             }
         } 
 
