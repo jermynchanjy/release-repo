@@ -49,16 +49,9 @@ pipeline {
             }
         } 
 
-parallel {
+stage('stage 4') {
 
-     stage('stage 4') {
-         steps {
-            sh """
-            env
-            """
-           } 
-         }
-
+      parallel {
 
 
           stage('test 1') {
@@ -87,4 +80,4 @@ parallel {
         }
 
     }  
-
+}
