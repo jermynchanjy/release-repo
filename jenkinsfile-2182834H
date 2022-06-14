@@ -45,7 +45,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 sh 'mvn install -Dmaven.test.skip=true'
+                 sh 'docker run -d -it --name=testing01 newtestapp /bin/sh'
             }
         } 
 
