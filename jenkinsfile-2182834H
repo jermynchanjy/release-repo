@@ -47,7 +47,36 @@ pipeline {
             steps {
                  sh 'mvn install -Dmaven.test.skip=true'
             }
+        } 
+
+Paralel {
+
+     stage('stage 4') {
+         steps {
+            sh """
+            env
+            """
+           } 
+         }
+
+
+
+          stage('test 1') {
+            steps {
+                 sh 'echo "App test1 success - 2182834H stage 4a Completed!"
+            }
         }
+
+
+    stage('test 2') {
+            steps {
+                 sh 'echo "App test1 success - 2182834H stage 4b Completed!"
+            }
+        }
+
+      }
+    }
+
 
         stage('Printing All Global Variables') {
             steps {
