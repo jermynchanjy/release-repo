@@ -68,7 +68,7 @@ stage('2182834H-stage 4') {
 
         stage('2182834H-stage 5') {
             steps {
-               input(message: 'Proceed to release the work to Prod Env?' ok: 'proceed')
+               input(message: 'Proceed to release the work to Prod Env?', ok: 'proceed')
                
             }
         }
