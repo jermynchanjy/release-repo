@@ -13,10 +13,7 @@ pipeline {
             )
     }
 
-    environment {
-        APP_NAME = "STUDENT_APP"
-        APP_ENV  = "DEV"
-    }
+   
 
     stages {
        
@@ -75,7 +72,10 @@ stage('2182834H-stage 4') {
                
             }
         }
-        
+  stage('2182834H-stage 6') {
+  when{
+  not{
+  
        
                   
                   }
