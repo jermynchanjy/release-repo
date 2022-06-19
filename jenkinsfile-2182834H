@@ -72,5 +72,15 @@ stage('2182834H-stage 4') {
                
             }
         }
+         stage('2182834H-stage 6') {
+        when{
+          not{
+         
+          input"proceed"
+          }
+          }
+          steps{
+          echo " work release to prod env"
+          
 }
 }
