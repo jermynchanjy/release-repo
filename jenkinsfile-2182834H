@@ -71,14 +71,7 @@ stage('2182834H-stage 4') {
                
             }
         }
-        stage('2182834H-stage 6') {
-        when {
-                not {
-                 sh """
-                echo "abort"
-                           """
-                }
-              }
+      
               
               steps {
                    echo "2182834H-work release to Prod Env"
