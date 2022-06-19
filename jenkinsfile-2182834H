@@ -43,7 +43,7 @@ pipeline {
             }
         } 
 
-stage('stage 4') {
+stage('2182834H-stage 4') {
 
       parallel {
 
@@ -65,13 +65,24 @@ stage('stage 4') {
     }
 
 
-        stage('Printing All Global Variables') {
+        stage('2182834H-stage 5') {
             steps {
-                sh """
-                env
-                """
+               input('Proceed to release the work to Prod Env? Proceed or Abort')
+               
             }
         }
+        stage('2182834H-stage 6') {
+        when {
+                not {
+                echo "abort"
+                }
+              }
+              
+              steps {
+                   echo "2182834H-work release to Prod Env"
+                   
+                   }
+                   }
 
     }  
 }
