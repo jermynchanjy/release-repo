@@ -71,13 +71,9 @@ stage('2182834H-stage 4') {
                
             }
         }
-      
-              
-              steps {
-                   echo "2182834H-work release to Prod Env"
+        
                    
-                   }
-                   }
+                  
 
     }  
 }
