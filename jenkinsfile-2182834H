@@ -74,9 +74,9 @@ stage('2182834H-stage 4') {
         
                     stage('2182834H-stage 6') {
              steps {
-               
+                sh """
                 echo "if proceed"
-        
+                 """
                   
                   }
                   }
