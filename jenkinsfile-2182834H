@@ -39,8 +39,10 @@ pipeline {
 
         stage('2182834H-stage 3') {
             steps {
-                sh 'echo "Create Container completed"'
-            }
+            sh"""
+            docker run -d -it -p 5000:80 --name=2182834H-test 2182834h-image
+              'echo "Create Container completed"'
+    """        }
         } 
 
 stage('2182834H-stage 4') {
@@ -74,9 +76,10 @@ stage('2182834H-stage 4') {
         
                     stage('2182834H-stage 6') {
              steps {
-                sh """
-                echo "if proceed"
-                 """
+             when {
+             not {
+             
+             
                   
                   }
                   }
